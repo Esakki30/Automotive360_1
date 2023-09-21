@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Page</title>
+    <link rel="stylesheet" href="styles_1.css"> <!-- Link to the external CSS file -->
+</head>
+<body>
+    <div class="signup-container">
+        <h2>Signup</h2>
+        <form>
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName" placeholder="Enter your first name" required>
+            
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName" placeholder="Enter your last name" required>
+            
+	    <label for="Father'sName">Father's Name:</label>
+            <input type="text" id="Father'sName" name="Father'sName" placeholder="Enter your Father's Name" required>
+
+	    <label for="Mother'sName">Mother's Name:</label>
+            <input type="text" id="Mother'sName" name="Mother'sName" placeholder="Enter your Mother's Name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+	
+	    <label for="Alternate_email">Secondary Email:</label>
+            <input type="Alternate_email" id="ALtwernate_email" name="Alternate_email" placeholder="Enter your Secondary Mail ID" required>
+
+	    <label for="mobile">Mobile Number:</label>
+            <input type="tel" id="mobile" name="mobile" placeholder="Enter your mobile number" required>
+
+	    <label for="dateOfBirth">Date of Birth:</label>
+            <input type="date" id="dateOfBirth" name="dateOfBirth" required>
+            
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required>
+
+	    <label for="governmentEmployee">Are you a Government Employee?</label>
+            <fieldset>
+                <label>
+                    <input type="radio" id="governmentYes" name="governmentEmployee" value="Yes">
+                    Yes
+                </label>
+                <label>
+                    <input type="radio" id="governmentNo" name="governmentEmployee" value="No" checked>
+                    No
+                </label>
+            </fieldset>
+
+             <div id="governmentSection">
+                <label for="governmentType">Government Type:</label>
+                <select id="governmentType" name="governmentType">
+                    <option value="State">State Government</option>
+                    <option value="Union">Union Government</option>
+                </select>
+
+                <label for="department">Department:</label>
+                <input type="text" id="department" name="department" placeholder="Enter department name">
+
+                <label for="currentDesignation">Current Designation:</label>
+                <input type="text" id="currentDesignation" name="currentDesignation" placeholder="Enter current designation">
+             </div>
+
+            <!-- Non-Government Employee Details -->
+             <div id="nonGovernmentSection">
+                <label for="currentCompany">Current Working Company:</label>
+                <input type="text" id="currentCompany" name="currentCompany" placeholder="Enter current company name">
+
+                <label for="currentCompanyDesignation">Current Designation:</label>
+                <input type="text" id="currentCompanyDesignation" name="currentCompanyDesignation" placeholder="Enter current designation">
+             </div>
+
+
+
+
+
+	    <label for="aadharNumber">AADHAR Number:</label>
+	    <input type="text" id="aadharNumber" name="aadharNumber" placeholder="Enter your AADHAR Number" required>
+
+	    <label for="panCardNumber">PAN Card Number:</label>
+	    <input type="text" id="panCardNumber" name="panCardNumber" placeholder="Enter your PAN Card Number" required>
+	    
+
+
+	    
+	    <fieldset>
+                <legend>Marital Status</legend>
+                <label>
+                    <input type="radio" id="single" name="maritalStatus" value="Single" required>
+                    Single
+                </label>
+                <label>
+                    <input type="radio" id="married" name="maritalStatus" value="Married">
+                    Married
+                </label>
+                <label>
+                    <input type="radio" id="divorced" name="maritalStatus" value="Divorced">
+                    Divorced
+                </label>
+            </fieldset>
+
+	    <fieldset>
+                <legend>Identified as</legend>
+                <label>
+                    <input type="radio" id="male" name="gender" value="Male" required>
+                    Male
+                </label>
+                <label>
+                    <input type="radio" id="female" name="gender" value="Female">
+                    Female
+                </label>
+                <label>
+                    <input type="radio" id="non-binary" name="gender" value="non-binary">
+                    non-binary
+                </label>
+            </fieldset>
+	    
+            <button type="submit">Signup</button>
+        </form>
+    </div>
+</body>
+</html>

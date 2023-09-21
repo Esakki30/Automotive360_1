@@ -1,0 +1,110 @@
+/* styles_1.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.signup-container {
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    width: 500px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="Father'sName"],
+input[type="Mother'sName"],
+input[type="Alternate_email"],
+input[type="dateOfBirth"],
+input[type="password"] {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    display: block;
+    text-align: center;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+fieldset {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+legend {
+    font-weight: bold;
+    background-color: #f0f0f0;
+    padding: 4px 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+fieldset label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+fieldset input[type="radio"] {
+    margin-right: 5px;
+}
+
+
+#governmentSection, #nonGovernmentSection {
+  visibility: hidden;
+}
+
+#governmentYes:checked ~ #governmentSection {
+  visibility: visible;
+}
+
+#governmentNo:checked ~ #nonGovernmentSection {
+  visibility: visible;
+}
+
+
+
+
+#permanentAddress {
+    display: none;
+}
+
+/* CSS to show permanent address when the checkbox is checked */
+#copyAddress:checked ~ #permanentAddress {
+    display: block;
+}
