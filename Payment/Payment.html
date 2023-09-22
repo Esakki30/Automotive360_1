@@ -1,1 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Page</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to the external CSS file -->
+</head>
+<body>
+    <div class="support-line">we support wide range of Indian Bank Cards Netbanking for payments
+
+</div>
+    <div class="payment-container">
+        <h2>Payment Details</h2>
+        <form id="payment-form">
+            <label for="paymentMethod"><b>Payment Method:</label>
+            <select id="paymentMethod" name="paymentMethod">
+                <option value="card">Credit/Debit Card</option>
+                <option value="upi">UPI</option>
+                <option value="netbanking">Net Banking</option>
+            </select>
+
+            <div id="cardFields">
+                <label for="cardholderName"><b>Cardholder Name:</label>
+                <input type="text" id="cardholderName" name="cardholderName" placeholder="Enter cardholder name" required>
+
+                <label for="cardNumber"><b>Card Number:</label>
+                <input type="text" id="cardNumber" name="cardNumber" placeholder="Enter card number" required>
+
+                <div class="card-details">
+                    <div class="card-expiration">
+                        <label for="expirationDate"><b>Expiration Date:</label>
+                        <input type="text" id="expirationDate" name="expirationDate" placeholder="MM/YY" required>
+                    </div>
+                    <div class="card-cvv">
+                        <label for="cvv"><b>CVV:</label>
+                        <input type="text" id="cvv" name="cvv" placeholder="Enter CVV" required>
+                    </div>
+                </div>
+            </div>
+
+            <div id="upiFields">
+                <label for="upiID">UPI ID:</label>
+                <input type="text" id="upiID" name="upiID" placeholder="Enter UPI ID" required>
+            </div>
+
+             <div id="netbankingFields">
+                <label for="bank"><b>Select Your Bank:</b></label>
+                <select id="bank" name="bank">
+                    <option value="bank1">Bank 1</option>
+                    <option value="bank2">Bank 2</option>
+                    <option value="bank3">Bank 3</option>
+                    <!-- Add more banks as needed -->
+                </select>
+             </div>
+
+
+            <button type="submit">Pay Now</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script> <!-- Link to the external JavaScript file -->
+</body>
+</html>

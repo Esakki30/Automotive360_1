@@ -1,0 +1,40 @@
+/* Style for the continuous line */
+.support-line {
+    height: 1px;
+    width: 100%;
+    background: linear-gradient(to right, #000, #000 50%, transparent 50%);
+    background-size: 200% 100%;
+    animation: move 10s linear infinite;
+}
+
+/* Animation to make the line move from left to right continuously */
+@keyframes move {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 100% 0;
+    }
+}
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh;
+}
+
+.payment-container {
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    width: 500px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
