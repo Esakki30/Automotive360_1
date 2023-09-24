@@ -111,3 +111,22 @@ fieldset input[type="radio"] {
 #copyAddress:checked ~ #permanentAddress {
     display: block;
 }
+
+
+
+@media (max-width: 768px) {
+    .signup-container {
+        width: 90%; 
+    }
+    
+   
+}
+
+
+@media (min-width: 769px) {
+    .signup-container {
+        width: 500px; /* Adjust the width for desktop screens */
+    }
+    
+   
+}
