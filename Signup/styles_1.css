@@ -97,9 +97,6 @@ fieldset input[type="radio"] {
   visibility: visible;
 }
 
-#married:checked ~ #spouseDetails {
-    display: block;
-}
 
 
 
