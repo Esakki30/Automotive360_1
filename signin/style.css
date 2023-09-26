@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins&display=swap');
+
+   
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif; /* Fixed the font family name */
+    cursor: pointer;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(#de11bb, #8f0568);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+form {
+    height: 25rem;
+    width: 25rem;
+    display: flex;
+    flex-direction: column;
+    background: rgba(255, 255, 255, 0.06);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    border-radius: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Fixed border properties */
+    box-sizing: border-box;
+}
+
+
+
+h1 {
+    font-size: 50px;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    letter-spacing: 3px;
+    margin-bottom: 5%;
+    opacity: 0.7;
+}
+
+label {
+    font-size: 20px;
+    color: white;
+    margin-left: 10%;
+    opacity: 0.8;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+input {
+    width: 80%;
+    color: white;
+    margin: 5% auto;
+    margin-top: 8%;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: white;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+    opacity: 0.8;
+}
+
+/* Style for the Login button */
+.login-button {
+    width: 100px; /* Adjusted the width */
+    margin: 3% auto;
+    color: white;
+    opacity: 0.7;
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 10px 20px; /* Adjusted padding */
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Fixed text-shadow property */
+    box-shadow: 0 4px 16px rgba(31, 38, 135, 0.37); /* Fixed box-shadow property */
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.login-button:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #000;} 
+
+
+
+a {
+    font-size: 12px;
+    text-align: center;
+    color: antiquewhite;
+    text-decoration: none; /* Added text-decoration property */
+}
