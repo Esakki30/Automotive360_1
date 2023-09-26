@@ -1,19 +1,25 @@
+const paymentMethodSelect = document.getElementById('paymentMethod');
+const cardFields = document.getElementById('cardFields');
+const upiFields = document.getElementById('upiFields');
+const netbankingFields = document.getElementById('netbankingFields');
 
-document.addEventListener('DOMContentLoaded', function () {
-    const paymentMethodSelect = document.getElementById('paymentMethod');
-    const cardFields = document.getElementById('cardFields');
-    const upiFields = document.getElementById('upiFields');
+paymentMethodSelect.addEventListener('change', () => {
+    const selectedMethod = paymentMethodSelect.value;
 
-    // Function to show or hide fields based on the selected payment method
-    function toggleFields() {
-        const selectedMethod = paymentMethodSelect.value;
-        cardFields.style.display = selectedMethod === 'card' ? 'block' : 'none';
-        upiFields.style.display = selectedMethod === 'upi' ? 'block' : 'none';
+    if (selectedMethod === 'card') {
+        cardFields.style.display = 'block';
+        upiFields.style.display = 'none';
+        netbankingFields.style.display = 'none';
+    } else if (selectedMethod === 'upi') {
+        cardFields.style.display = 'none';
+        upiFields.style.display = 'block';
+        netbankingFields.style.display = 'none';
+    } else if (selectedMethod === 'netbanking') {
+        cardFields.style.display = 'none';
+        upiFields.style.display = 'none';
+        netbankingFields.style.display = 'block';
     }
-
-    // Initial state
-    toggleFields();
-
-    // Listen for changes in the payment method selection
-    paymentMethodSelect.addEventListener('change', toggleFields);
 });
+
+// Trigger the change event to hide fields on page load
+paymentMethodSelect.dispatchEvent(new Event('change'));
