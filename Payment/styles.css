@@ -1,40 +1,121 @@
-/* Style for the continuous line */
-.support-line {
-    height: 1px;
-    width: 100%;
-    background: linear-gradient(to right, #000, #000 50%, transparent 50%);
-    background-size: 200% 100%;
-    animation: move 10s linear infinite;
-}
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins&display=swap');
 
-/* Animation to make the line move from left to right continuously */
-@keyframes move {
-    0% {
-        background-position: 0 0;
-    }
-    100% {
-        background-position: 100% 0;
-    }
-}
-
-
-
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+     
+* {
     margin: 0;
     padding: 0;
-    display: flex;
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    height: 100vh;
+    box-sizing: border-box;
 }
 
-.payment-container {
-    background-color: #ffffff;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    padding: 20px;
-    width: 500px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+/* Body styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
 }
+
+/* Header styles */
+.support-line {
+    font-family: 'Poppins', sans-serif;
+    background-color: #d920d9;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+/* Payment container styles */
+.payment-container {
+    background-color: linear-gradient(#d920d9,#810581);
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+    margin: 20px auto;
+    max-width: 500px;
+    padding: 20px;
+    position: relative;
+}
+
+/* Heading styles */
+h2 {
+    color: linear-gradient(#c04848,#480048);
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Form styles */
+form {
+    text-align: left;
+    padding: 20px;
+}
+
+/* Label styles */
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Input and select styles */
+input[type="text"],
+select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* Pay Now button styles */
+.pay-now-button {
+    background:green  ;
+    font-family: 'Poppins', sans-serif;
+    border: none;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-size-adjust: 10px;
+    font-weight: bold;
+}
+
+.lock-icon {
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+    background: transparent;
+}
+
+.pay-now-button:hover {
+    background-color: rgba(19, 133, 13, 0.8);
+    color: #fefefe;
+}
+
+/* Secure Payment styles */
+.secure-payment {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.secure-payment-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
