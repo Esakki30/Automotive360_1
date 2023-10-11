@@ -1,129 +1,111 @@
-/* styles_1.css */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins&display=swap');
 
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(#707090, #333637);
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    margin: 0;
+    cursor: pointer;
 }
 
 .signup-container {
-    background-color: #ffffff;
-    border: 1px solid #ccc;
-    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.06);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    border-radius: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    width: 600px;
     padding: 20px;
-    width: 500px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    box-sizing: border-box;
 }
 
 h2 {
+    font-size: 50px;
     text-align: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    letter-spacing: 3px;
+    margin-bottom: 5%;
+    opacity: 0.7;
 }
 
 label {
-    font-weight: bold;
+    font-size: 20px;
+    color: white;
+    opacity: 0.8;
+    margin-left: 10%;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
+/* Style for form elements */
 input[type="text"],
 input[type="email"],
 input[type="tel"],
-input[type="Father'sName"],
-input[type="Mother'sName"],
-input[type="Alternate_email"],
-input[type="dateOfBirth"],
-input[type="password"] {
-    width: 90%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+input[type="date"],
+input[type="password"],
+select {
+    width: 100%;
+    color: white;
+    margin: 8px 0;
+    padding: 8px;
+    border: none;
+    outline: none;
+    background: transparent;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+    opacity: 0.8;
 }
 
+/* Style for buttons */
 button {
-    background-color: #007bff;
-    color: #ffffff;
+    width: 100%;
+    margin: 10px 0;
+    color: white;
+    opacity: 0.7;
+    background-color: rgba(255, 255, 255, 0.6);
     padding: 10px 20px;
     border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 16px;
-    width: 100%;
-    display: block;
-    text-align: center;
+    outline: none;
+    border-radius: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 16px rgba(31, 38, 135, 0.37);
+    border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
-button:hover {
-    background-color: #0056b3;
-}
-
-fieldset {
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    margin-top: 20px;
-    padding: 10px;
-}
-
-legend {
-    font-weight: bold;
-    background-color: #f0f0f0;
-    padding: 4px 8px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-fieldset label {
-    display: block;
-    margin-bottom: 8px;
-}
-
-fieldset input[type="radio"] {
-    margin-right: 5px;
-}
-
-
-#governmentSection, #nonGovernmentSection {
-  visibility: hidden;
-}
-
-#governmentYes:checked ~ #governmentSection {
-  visibility: visible;
-}
-
-#governmentNo:checked ~ #nonGovernmentSection {
-  visibility: visible;
-}
-
-
-
-
-#permanentAddress {
-    display: none;
-}
-
-/* CSS to show permanent address when the checkbox is checked */
-#copyAddress:checked ~ #permanentAddress {
-    display: block;
-}
-
-
-
-@media (max-width: 768px) {
+/* Responsive for mobile */
+@media screen and (max-width: 480px) {
     .signup-container {
-        width: 90%; 
+        width: 90%;
+        padding: 10px; /* Adjust padding for smaller screens */
     }
-    
-   
-}
 
-
-@media (min-width: 769px) {
-    .signup-container {
-        width: 500px; /* Adjust the width for desktop screens */
+    h2 {
+        font-size: 30px; /* Reduce the font size for headings */
     }
-    
-   
+
+    label {
+        font-size: 16px; /* Reduce the font size for labels */
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="date"],
+    input[type="password"],
+    select {
+        font-size: 14px; /* Reduce the font size for form elements */
+    }
+
+    button {
+        font-size: 16px; /* Reduce the font size for buttons */
+    }
 }
